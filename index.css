@@ -265,15 +265,15 @@ footer ul li a:hover {
   background-color: black;
   width: 21vw;
 }
-.one section div:hover a {
+.one section div:hover p {
   transform: translateY(-100%);
   color: white;
 }
-.one section div:hover p {
+.one section div:hover a {
   transform: translateY(-68%);
   color: white;
 }
-.one section div a {
+.one section div p {
   padding: 2vw;
   transition: 0.5s all;
   font-size: 1.4vw;
@@ -282,7 +282,7 @@ footer ul li a:hover {
   left: 0;
   color: black;
 }
-.one section div p {
+.one section div a {
   top: 100%;
   left: 5vw;
   padding: 2vw;
