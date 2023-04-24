@@ -1,0 +1,54 @@
+.logo {
+    img {
+        position: fixed;
+        top: .5vw;
+        left: 1vw;
+        height: 4vw;
+        border-radius: 999vw;
+    }
+}
+
+
+nav {
+    z-index: 1;
+    position: absolute;
+    padding: 1vw 0;
+
+    ul {
+        display: flex;
+        color: black;
+        width: 100vw;
+        align-items: center;
+        justify-content: center;
+
+
+
+        li {
+            list-style-type: none;
+            font-size: 2vw;
+            margin: 0 1vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            a {
+                color: black;
+                transition: .2s all;
+                padding-left: 1vw;
+                border-radius: 2vw;
+
+
+                &:hover {
+                    background-color: black;
+                    color: white;
+                    padding-left: 2vw;
+                    padding-right: 2vw;
+
+                }
+
+
+            }
+        }
+    }
+
+}

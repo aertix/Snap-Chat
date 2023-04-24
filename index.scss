@@ -1,0 +1,64 @@
+@font-face {
+    font-family: "headline";
+    src: url("fonts/headline.ttf");
+}
+
+@font-face {
+    font-family: "normal";
+    src: url("fonts/normal.otf");
+}
+
+* {
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+p {
+    font-family: normal;
+}
+
+a {
+    font-family: normal;
+    text-decoration: none;
+}
+
+@import "scss/nav";
+@import "scss/page1";
+@import "scss/page2";
+@import "scss/footer";
+@import "scss/projects";
+@import "scss/contact";
+
+
+
+
+
+// Scrollbar
+html::-webkit-scrollbar {
+    width: .5vw;
+    background: black;
+    padding: .1vw;
+}
+
+html::-webkit-scrollbar-track {
+    margin-block: 0.3rem;
+    border-radius: 100vw;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 100vw;
+
+}
+
+html::-webkit-scrollbar-thumb:hover {
+    background-color: white;
+    border: 1px solid #F1D0F3;
+}

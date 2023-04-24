@@ -1,0 +1,774 @@
+@font-face {
+  font-family: "headline";
+  src: url("fonts/headline.ttf");
+}
+@font-face {
+  font-family: "normal";
+  src: url("fonts/normal.otf");
+}
+* {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+p {
+  font-family: normal;
+}
+
+a {
+  font-family: normal;
+  text-decoration: none;
+}
+
+.logo img {
+  position: fixed;
+  top: 0.5vw;
+  left: 1vw;
+  height: 4vw;
+  border-radius: 999vw;
+}
+
+nav {
+  z-index: 1;
+  position: absolute;
+  padding: 1vw 0;
+}
+nav ul {
+  display: flex;
+  color: black;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+}
+nav ul li {
+  list-style-type: none;
+  font-size: 2vw;
+  margin: 0 1vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav ul li a {
+  color: black;
+  transition: 0.2s all;
+  padding-left: 1vw;
+  border-radius: 2vw;
+}
+nav ul li a:hover {
+  background-color: black;
+  color: white;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+.page1 {
+  height: 52vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #C9D6FF;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #FDE2CE, #fbe1e3);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.page1 div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page1 div h1 {
+  font-size: 8vw;
+  font-family: headline;
+  z-index: 2;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  animation: letters 3s infinite;
+}
+@keyframes letters {
+  0% {
+    letter-spacing: 1vw;
+  }
+  50% {
+    letter-spacing: 2vw;
+  }
+  100% {
+    letter-spacing: 1vw;
+  }
+}
+.page1 div img {
+  width: 40vw;
+  position: absolute;
+  left: 50vw-width;
+  top: 50vh-height;
+}
+
+.page2 {
+  height: 52vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FDE2CE;
+}
+
+.services {
+  display: grid;
+  width: 100vw;
+  grid-template-areas: "a a b c" "a a d d";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 20vw 20vw;
+  gap: 0.5vw;
+}
+.services div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.services div:hover a {
+  width: 95%;
+  height: 95%;
+  cursor: pointer;
+  font-size: 2.1vw;
+}
+.services div a {
+  background-color: black;
+  border-radius: 5vw;
+  border: 2px solid black;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s all;
+  font-size: 2vw;
+  color: black;
+}
+
+#prop1 {
+  grid-area: a;
+}
+#prop1 a {
+  background-color: rgb(249, 135, 135);
+}
+
+#prop2 {
+  grid-area: b;
+}
+#prop2 a {
+  background-color: rgb(38, 25, 2);
+}
+
+#prop3 {
+  grid-area: c;
+}
+#prop3 a {
+  background-color: #E51920;
+}
+
+#prop4 {
+  grid-area: d;
+}
+#prop4 a {
+  background-color: rgb(246, 193, 255);
+}
+
+footer {
+  display: flex;
+  background-color: black;
+  padding: 6vw 0;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1000;
+}
+footer img {
+  height: 10vw;
+  border-radius: 999vw;
+}
+footer ul:nth-child(2) :nth-child(3) {
+  width: 17vw;
+}
+footer ul li a {
+  color: white;
+  transition: 0.2s all;
+  padding-left: 1vw;
+  border-radius: 2vw;
+  font-size: 2vw;
+  padding-right: 2vw;
+}
+footer ul li a:hover {
+  background-color: white;
+  color: black;
+  padding-left: 2vw;
+}
+
+.projects {
+  height: 52vw;
+  width: 100vw;
+  display: flex;
+  background: #fffc00;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, bisque, #fffc00);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.projects img {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: bisque;
+  z-index: -1;
+}
+
+.one {
+  width: 50%;
+  height: 100%;
+  padding-left: 1vw;
+  position: fixed;
+}
+.one h1 {
+  font-family: normal;
+  font-size: 7vw;
+  margin-top: 4vw;
+  position: fixed;
+}
+.one section {
+  position: fixed;
+  bottom: 1vw;
+}
+.one section div {
+  overflow: hidden;
+  margin: 1vw 0;
+  background-color: #F6C1FF;
+  border: 2px solid black;
+  border-radius: 2vw;
+  cursor: pointer;
+  position: relative;
+  width: 20vw;
+  height: 2vw;
+  transition: 0.5s all;
+}
+.one section div:hover {
+  background-color: black;
+  width: 21vw;
+}
+.one section div:hover a {
+  transform: translateY(-100%);
+  color: white;
+}
+.one section div:hover p {
+  transform: translateY(-68%);
+  color: white;
+}
+.one section div a {
+  padding: 2vw;
+  transition: 0.5s all;
+  font-size: 1.4vw;
+  position: absolute;
+  top: -100%;
+  left: 0;
+  color: black;
+}
+.one section div p {
+  top: 100%;
+  left: 5vw;
+  padding: 2vw;
+  transition: 0.5s all;
+  font-size: 1.4vw;
+  position: absolute;
+}
+
+.two {
+  width: 50%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 5vw;
+  right: 0vw;
+}
+.two div {
+  background-color: black;
+  margin: 2vw 0;
+  width: 40vw;
+  height: 38vw;
+  border-radius: 5vw;
+  border: 2px solid black;
+}
+.two div:nth-child(1) {
+  background: url("../media/projects/client1.jpg");
+  background-size: cover;
+}
+.two div:nth-child(2) {
+  background: url("../media/projects/client2.jpg");
+  background-size: cover;
+}
+.two div:nth-child(3) {
+  background: url("../media/projects/client3.jpg");
+  background-size: cover;
+}
+.two div:nth-child(4) {
+  background: url("../media/projects/client4.jpg");
+  background-size: cover;
+}
+.two div:nth-child(5) {
+  background: url("../media/projects/client5.jpg");
+  background-size: cover;
+}
+.two div :after {
+  display: block;
+  content: "";
+  position: absolute;
+  z-index: 20000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: black;
+}
+
+.coverUp {
+  z-index: 100;
+  margin-top: 160vw;
+  height: 42vw;
+  width: 100%;
+  background-color: rgb(43, 32, 3);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-top-right-radius: 5vw;
+  border-top-left-radius: 5vw;
+  padding: 2.3vw;
+  padding-top: 2vw;
+}
+.coverUp h1 {
+  font-size: 7vw;
+  font-family: normal;
+  color: white;
+}
+.coverUp p {
+  font-size: 2vw;
+  font-family: normal;
+  color: black;
+  padding: 1vw;
+  width: 23vw;
+  margin-top: 20vw;
+  border-radius: 4vw;
+  background-color: #F6C1FF;
+}
+
+.background {
+  background-color: blanchedalmond;
+}
+
+.contactInfo {
+  width: 1fr;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  padding-left: 5vw;
+  height: 31vw;
+  gap: 1.4vw;
+  border-top-left-radius: 2vw;
+  border-bottom-left-radius: 2vw;
+  text-align: center;
+  font-family: normal;
+}
+.contactInfo h1 {
+  font-size: 3vw;
+  font-family: normal;
+}
+.contactInfo p {
+  font-size: 1.3vw;
+}
+.contactInfo a {
+  padding: 1vw;
+  background-color: antiquewhite;
+  border-radius: 10vw;
+  text-decoration: none;
+  font-size: 1vw;
+  background-color: black;
+  color: white;
+  transition: 0.5s all;
+}
+.contactInfo a:hover {
+  transform: scale(1.07);
+  color: pink;
+}
+.contactInfo a:active {
+  transform: scale(0.9);
+  color: pink;
+}
+
+.stayUp {
+  transform: translateY(-2.1vw);
+}
+
+.thankYou {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1000;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4vw;
+  text-align: center;
+  transition: 1s all;
+  flex-direction: column;
+}
+.thankYou button {
+  position: relative;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: black;
+  padding: 1vw 2vw;
+  color: white;
+  border: none;
+  border-radius: 1rem;
+  position: relative;
+  z-index: 0;
+  font-size: 1vw;
+  border-radius: 2vw;
+  cursor: pointer;
+  margin-bottom: 1.5vw;
+  transition: 0.5s all;
+}
+.thankYou button:hover {
+  transform: scale(1.07);
+  color: pink;
+}
+.thankYou button:active {
+  transform: scale(0.9);
+  color: pink;
+}
+
+.stayDown {
+  transform: translateY(100%);
+}
+
+.goBackUp {
+  transform: translateY(-100%);
+}
+
+.contactForm {
+  width: 1fr;
+  align-items: center;
+  position: relative;
+  display: flex;
+  padding: 7vw 0;
+  border-radius: 2vw;
+  justify-content: center;
+  font-family: normal;
+}
+.contactForm section {
+  border-top-right-radius: 2vw;
+  border-bottom-right-radius: 2vw;
+  overflow: hidden;
+  height: 31vw;
+  width: 35vw;
+  justify-content: center;
+  padding: 0;
+  position: relative;
+  font-family: normal;
+}
+.contactForm section span {
+  position: relative;
+}
+.contactForm section span div {
+  top: 1.83vw;
+  color: gray;
+  left: 2vw;
+  font-size: 1vw;
+  position: absolute;
+  pointer-events: none;
+  transition: 0.5s all;
+  font-family: normal;
+}
+.contactForm section form {
+  overflow: hidden;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 1fr;
+  justify-content: center;
+  align-items: center;
+  padding: 1vw 0;
+  margin: 0;
+}
+.contactForm section form h2 {
+  font-size: 3vw;
+  font-family: normal;
+}
+.contactForm section form input {
+  border: 0.01vw solid black;
+  margin: 0.8vw;
+  width: 20vw;
+  font-size: 1vw;
+  padding: 1vw;
+  border-radius: 2vw;
+  cursor: url("media/textCursor.svg"), auto;
+}
+.contactForm section form input:hover {
+  box-shadow: inset 0px 0px 0.05vw 0.05vw black;
+}
+.contactForm section form input:active {
+  border: 0.01vw solid black;
+}
+.contactForm section form input:hover ~ div {
+  transform: translateY(-2.1vw);
+  font-size: 0.7vw;
+}
+.contactForm section form textarea {
+  border: 0.01vw solid black;
+  margin: 0.8vw;
+  width: 20vw;
+  font-size: 1vw;
+  padding: 1vw;
+  border-radius: 2vw;
+  cursor: url("media/textCursor.svg"), auto;
+}
+.contactForm section form textarea:hover {
+  box-shadow: inset 0px 0px 0.05vw 0.05vw black;
+}
+.contactForm section form textarea:active {
+  border: 0.01vw solid black;
+}
+.contactForm section form textarea:hover ~ div {
+  transform: translateY(-2.1vw);
+  font-size: 0.7vw;
+}
+.contactForm section form button {
+  position: relative;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: black;
+  padding: 1vw 2vw;
+  color: white;
+  border: none;
+  border-radius: 1rem;
+  position: relative;
+  z-index: 0;
+  font-size: 1vw;
+  border-radius: 2vw;
+  cursor: pointer;
+  margin-bottom: 1.5vw;
+  transition: 1s transform;
+}
+.contactForm section form button:hover {
+  transform: scale(1.07);
+  color: pink;
+}
+.contactForm section form button:active {
+  transform: scale(0.9);
+  color: pink;
+}
+
+@media (max-width: 500px) {
+  .stayUp {
+    transform: translateY(-8.1vw);
+  }
+  .thankYou {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4vw;
+    text-align: center;
+    transition: 1s all;
+    flex-direction: column;
+  }
+  .thankYou button {
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: black;
+    padding: 1vw 2vw;
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    position: relative;
+    z-index: 0;
+    font-size: 1vw;
+    border-radius: 2vw;
+    cursor: pointer;
+    margin-bottom: 1.5vw;
+    transition: 0.1s all;
+  }
+  .thankYou button:hover {
+    transform: scale(1.07);
+    color: red;
+  }
+  .thankYou button:active {
+    transform: scale(0.9);
+    color: red;
+  }
+  .stayDown {
+    transform: translateY(100%);
+  }
+  .goBackUp {
+    transform: translateY(-100%);
+  }
+  .contactForm {
+    width: 100%;
+    align-items: center;
+    position: relative;
+    margin-bottom: 5vw;
+    display: flex;
+    z-index: 99;
+    flex-direction: column-reverse;
+  }
+  .contactForm img {
+    height: 70vw;
+    margin-right: 8vw;
+    pointer-events: none;
+    margin: 13vw 0;
+  }
+  .contactForm span {
+    position: relative;
+  }
+  .contactForm span div {
+    top: 6.23vw;
+    color: gray;
+    left: 7.5vw;
+    font-size: 5vw;
+    position: absolute;
+    pointer-events: none;
+    transition: 0.5s all;
+  }
+  .contactForm section {
+    overflow: hidden;
+    width: 100%;
+    justify-content: center;
+    padding: 0;
+    position: relative;
+    border-radius: 2vw;
+  }
+  .contactForm section form {
+    overflow: hidden;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2vw;
+    padding: 4vw 0;
+    margin: 0;
+  }
+  .contactForm section form h2 {
+    font-size: 7vw;
+    font-family: normal;
+    display: none;
+  }
+  .contactForm section form input {
+    border: 0.01vw solid black;
+    margin: 3.4vw;
+    width: 60vw;
+    font-size: 5vw;
+    padding: 3vw;
+    border-radius: 2vw;
+    cursor: url("media/textCursor.svg"), auto;
+  }
+  .contactForm section form input:hover {
+    box-shadow: inset 0px 0px 0.05vw 0.05vw black;
+  }
+  .contactForm section form input:active {
+    border: 0.01vw solid black;
+  }
+  .contactForm section form input:hover ~ div {
+    transform: translateY(-8.1vw);
+    font-size: 5vw;
+  }
+  .contactForm section form textarea {
+    border: 0.01vw solid black;
+    margin: 3.4vw;
+    width: 60vw;
+    font-size: 5vw;
+    padding: 3vw;
+    border-radius: 2vw;
+    cursor: url("media/textCursor.svg"), auto;
+  }
+  .contactForm section form textarea:hover {
+    box-shadow: inset 0px 0px 0.05vw 0.05vw black;
+  }
+  .contactForm section form textarea:active {
+    border: 0.01vw solid black;
+  }
+  .contactForm section form textarea:hover ~ div {
+    transform: translateY(-8.1vw);
+    font-size: 5vw;
+  }
+  .contactForm section form button {
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: black;
+    padding: 3vw 8vw;
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    position: relative;
+    z-index: 0;
+    font-size: 5vw;
+    border-radius: 2vw;
+    cursor: pointer;
+    margin-bottom: 1.5vw;
+    transition: 1s transform;
+  }
+  .contactForm section form button:hover {
+    transform: scale(1.07);
+    color: red;
+  }
+  .contactForm section form button:active {
+    transform: scale(0.9);
+    color: red;
+  }
+}
+html::-webkit-scrollbar {
+  width: 0.5vw;
+  background: black;
+  padding: 0.1vw;
+}
+
+html::-webkit-scrollbar-track {
+  margin-block: 0.3rem;
+  border-radius: 100vw;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 100vw;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background-color: white;
+  border: 1px solid #F1D0F3;
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,190 @@
+.projects {
+    height: 52vw;
+    width: 100vw;
+    display: flex;
+    background: #fffc00;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, bisque, #fffc00);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, bisque, #fffc00);
+
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    img {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: bisque;
+
+        z-index: -1;
+    }
+}
+
+// 1st half
+.one {
+    width: 50%;
+    height: 100%;
+    padding-left: 1vw;
+    position: fixed;
+
+    h1 {
+        font-family: normal;
+        font-size: 7vw;
+        margin-top: 4vw;
+        position: fixed;
+    }
+
+    section {
+        position: fixed;
+        bottom: 1vw;
+
+        div {
+            overflow: hidden;
+            margin: 1vw 0;
+            background-color: #F6C1FF;
+            border: 2px solid black;
+            border-radius: 2vw;
+            cursor: pointer;
+            position: relative;
+            width: 20vw;
+            height: 2vw;
+            transition: .5s all;
+
+            &:hover {
+                background-color: black;
+                width: 21vw;
+            }
+
+            &:hover a {
+                transform: translateY(-100%);
+                color: white;
+            }
+
+            &:hover p {
+                transform: translateY(-68%);
+                color: white;
+            }
+
+            a {
+                padding: 2vw;
+                transition: .5s all;
+                font-size: 1.4vw;
+                position: absolute;
+                top: -100%;
+                left: 0;
+                color: black;
+
+            }
+
+            p {
+                top: 100%;
+                left: 5vw;
+                padding: 2vw;
+                transition: .5s all;
+                font-size: 1.4vw;
+                position: absolute;
+            }
+        }
+    }
+}
+
+// 2nd half
+.two {
+    width: 50%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 5vw;
+    right: 0vw;
+
+    div {
+        background-color: black;
+        margin: 2vw 0;
+        width: 40vw;
+        height: 38vw;
+        border-radius: 5vw;
+        border: 2px solid black;
+
+        &:nth-child(1) {
+            background: url("../media/projects/client1.jpg");
+            background-size: cover;
+        }
+
+        &:nth-child(2) {
+            background: url("../media/projects/client2.jpg");
+            background-size: cover;
+        }
+
+        &:nth-child(3) {
+            background: url("../media/projects/client3.jpg");
+            background-size: cover;
+        }
+
+        &:nth-child(4) {
+            background: url("../media/projects/client4.jpg");
+            background-size: cover;
+        }
+
+        &:nth-child(5) {
+            background: url("../media/projects/client5.jpg");
+            background-size: cover;
+        }
+
+
+
+
+        :after {
+            display: block;
+            content: '';
+            position: absolute;
+            z-index: 20000;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            color: black;
+        }
+
+
+    }
+}
+
+
+
+.coverUp {
+    z-index: 100;
+    margin-top: 160vw;
+    height: 42vw;
+    width: 100%;
+    background-color: rgb(43, 32, 3);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top-right-radius: 5vw;
+    border-top-left-radius: 5vw;
+    padding: 2.3vw;
+    padding-top: 2vw;
+
+    h1 {
+        font-size: 7vw;
+        font-family: normal;
+        color: white;
+
+    }
+
+    p {
+        font-size: 2vw;
+        font-family: normal;
+        color: black;
+        padding: 1vw;
+        width: 23vw;
+        margin-top: 20vw;
+        border-radius: 4vw;
+        background-color: #F6C1FF;
+    }
+}

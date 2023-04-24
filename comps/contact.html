@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../index.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script defer src="../js/AOS.js"></script>
+    <script defer src="../js/projects.js"></script>
+    <script>
+        $(function () {
+            $("#navbar-placeholder").load("../comps/nav.html");
+        });
+    </script>
+    <div id="navbar-placeholder"></div>
+</head>
+
+
+<body>
+    <div class="background">
+        <div class="contactForm scroll">
+
+            <div class="contactInfo">
+                <h1>Contact <br>Information</h1>
+                <p>Phone: (310) 916-2229</p>
+                <p>Email: hello@surmount.agency</p>
+                <a href="https://instagram.com/surmount.agency">Our Instagram Page</a>
+            </div>
+            <section>
+                <div class="thankYou">
+                    <h1>Thank You</h1>
+                    <button id="submitAgain">Submit Again</button>
+                </div>
+                <form class="">
+
+                    <h2>Get in Touch</h2>
+                    <span><input class="fields" id="field1" autocomplete="do-not-autofill">
+                        <div>Your Name</div>
+                    </span>
+                    <span><input class="fields" id="field2" autocomplete="do-not-autofill">
+                        <div>Email</div>
+                    </span>
+                    <span><input class="fields" id="field3" autocomplete="do-not-autofill">
+                        <div>Phone Number</div>
+                    </span>
+
+                    <span><textarea class="fields" id="message" rows="3"></textarea>
+                        <div>How can we help you?</div>
+                    </span>
+                    <button id="submit">Send</button>
+
+                </form>
+            </section>
+        </div>
+
+
+    </div>
+
+    <script>
+        $(function () {
+            $("#footer-placeholder").load("footer.html");
+        });
+    </script>
+    <div id="footer-placeholder"></div>
+</body>
+
+</html>
