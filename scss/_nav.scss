@@ -5,6 +5,17 @@
         left: 1vw;
         height: 4vw;
         border-radius: 999vw;
+        transition: .4s all;
+
+        &:hover {
+            height: 4.4vw;
+            filter: invert(180%);
+        }
+
+        &:active {
+            height: 3.8vw;
+
+        }
     }
 }
 

@@ -33,6 +33,14 @@ a {
   left: 1vw;
   height: 4vw;
   border-radius: 999vw;
+  transition: 0.4s all;
+}
+.logo img:hover {
+  height: 4.4vw;
+  filter: invert(180%);
+}
+.logo img:active {
+  height: 3.8vw;
 }
 
 nav {
