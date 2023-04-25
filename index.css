@@ -115,7 +115,8 @@ nav ul li a:hover {
 }
 
 .page2 {
-  height: 52vw;
+  height: auto;
+  padding: 4vw 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -127,7 +128,7 @@ nav ul li a:hover {
   width: 100vw;
   grid-template-areas: "a a b c" "a a d d";
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 20vw 20vw;
+  grid-template-rows: 10vw 10vw;
   gap: 0.5vw;
 }
 .services div {
@@ -144,7 +145,7 @@ nav ul li a:hover {
 .services div a {
   background-color: black;
   border-radius: 5vw;
-  border: 2px solid black;
+  border: 3px solid black;
   width: 100%;
   height: 100%;
   display: flex;
@@ -167,6 +168,7 @@ nav ul li a:hover {
 }
 #prop2 a {
   background-color: rgb(38, 25, 2);
+  color: white;
 }
 
 #prop3 {
@@ -174,13 +176,14 @@ nav ul li a:hover {
 }
 #prop3 a {
   background-color: #E51920;
+  color: white;
 }
 
 #prop4 {
   grid-area: d;
 }
 #prop4 a {
-  background-color: rgb(246, 193, 255);
+  background-color: #D2C1F0;
 }
 
 footer {
@@ -217,10 +220,10 @@ footer ul li a:hover {
   height: 52vw;
   width: 100vw;
   display: flex;
-  background: #fffc00;
+  background: #FBE1E3;
   /* fallback for old browsers */
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, bisque, #fffc00);
+  background: linear-gradient(to top, bisque, #FBE1E3);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .projects img {
@@ -252,7 +255,7 @@ footer ul li a:hover {
 .one section div {
   overflow: hidden;
   margin: 1vw 0;
-  background-color: #F6C1FF;
+  background-color: #D2C1F0;
   border: 2px solid black;
   border-radius: 2vw;
   cursor: pointer;
@@ -371,6 +374,61 @@ footer ul li a:hover {
   margin-top: 20vw;
   border-radius: 4vw;
   background-color: #F6C1FF;
+}
+
+.text {
+  height: auto;
+  width: 100vw;
+  padding-top: 3vw;
+  display: flex;
+  flex-direction: row;
+}
+.text img {
+  height: 40vw;
+  position: fixed;
+}
+.text area {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 11vw;
+  background-color: antiquewhite;
+  z-index: -1;
+}
+.text section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vw;
+  background-color: antiquewhite;
+  z-index: -2;
+}
+.text div {
+  width: 50%;
+  padding: 2vw 2vw;
+  display: flex;
+}
+.text div h1 {
+  position: fixed;
+  font-size: 5vw;
+  font-family: normal;
+}
+.text div p {
+  display: block;
+  padding-top: 6vw;
+  width: 90%;
+  font-size: 1.5vw;
+  font-family: normal;
+  position: relative;
+  z-index: -2;
+}
+.text div:nth-child(1) {
+  flex-direction: column;
+}
+.text div:nth-child(2) {
+  justify-content: center;
 }
 
 .background {

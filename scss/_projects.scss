@@ -2,11 +2,11 @@
     height: 52vw;
     width: 100vw;
     display: flex;
-    background: #fffc00;
+    background: #FBE1E3;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, bisque, #fffc00);
+    background: -webkit-linear-gradient(to bottom, bisque, #FBE1E3);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, bisque, #fffc00);
+    background: linear-gradient(to top, bisque, #FBE1E3);
 
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     img {
@@ -42,7 +42,7 @@
         div {
             overflow: hidden;
             margin: 1vw 0;
-            background-color: #F6C1FF;
+            background-color: #D2C1F0;
             border: 2px solid black;
             border-radius: 2vw;
             cursor: pointer;

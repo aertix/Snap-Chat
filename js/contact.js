@@ -1,3 +1,4 @@
+
 let contactBeg = '1vw'
 let contactEnd = '.7vw'
 let inputs = document.querySelectorAll('.fields')
